@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>d_m_s</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Helvetica, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      color: #F5F5F5; /* Off-white color */
+      background-color: black;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .title-label {
+      position: absolute;
+      z-index: 9;
+      color: #D25F57; /* Raspberry blush color */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.25em; /* 1.5 times the size of .about-button font-size */
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 90%;
+      white-space: nowrap;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 599px) {
+      body {
+        font-size: 10px;
+      }
+    }
+
+    video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .about-button {
+      position: absolute;
+      z-index: 10;
+      font-size: 1em; /* Adjust the font size as needed */
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .about-button a {
+      text-decoration: none;
+      color: #F5F5F5; /* Off-white color */
+      font-size: 1.2em; /* Adjust the font size as needed */
+    }
+
+    .about-left {
+      left: 0px;
+      bottom: 0px;
+    }
+
+    .about-right {
+      right: 0px;
+      bottom: 0px;
+    }
+
+    .about-top-left {
+      left: 0px;
+      top: 0px;
+    }
+
+    .about-top-right {
+      right: 0px;
+      top: 0px;
+    }
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <a class="title-label" href="mailto:lucaludwig@icloud.com">understanding data through context</a>
+    <video autoplay loop muted playsinline>
+      <source src="2023-09-08_14-46-06_UTC.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="about-button about-left">
+    <a href="about.html">ABOUT</a>
+  </div>
+  <div class="about-button about-right">
+    <a href="about.html">ABOUT</a>
+  </div>
+  <div class="about-button about-top-left">
+    <a href="about.html">ABOUT</a>
+  </div>
+  <div class="about-button about-top-right">
+    <a href="about.html">ABOUT</a>
+  </div>
+</body>
+</html>
