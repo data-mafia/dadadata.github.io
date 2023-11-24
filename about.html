@@ -12,37 +12,52 @@
             margin: 20px;
             background-color: #f07178;
             color: #fff;
+            position: relative; /* Add relative positioning */
         }
-
+    
         h1, h2, h3 {
             color: #fff;
         }
-
+    
         p, a {
             color: #fff;
-            text-decoration: none; /* Remove the underline */
-            line-height: 1.5; /* Adjust line height for better readability */
+            text-decoration: none;
+            line-height: 1.5;
         }
-
+    
         #contact {
-            margin-top: 30px; /* Increase the margin for more space */
+            margin-top: 30px;
         }
-
+    
         section {
-            margin-bottom: 30px; /* Increase the margin between sections */
+            margin-bottom: 30px;
         }
-
+    
         ul {
-            list-style-type: disc; /* Use a disc as a bullet point */
+            list-style-type: disc;
             padding: 0;
-            margin-top: 10px; /* Add some space above the bullet points */
+            margin-top: 10px;
         }
-
+    
         li {
-            margin-bottom: 10px; /* Increase the margin between list items */
-            line-height: 1.5; /* Adjust line height for better readability */
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+    
+        /* Add the off-white frame */
+        main::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            background-color: #f8f8f8; /* Off-white color */
+            z-index: -1; /* Move the frame below the content */
         }
     </style>
+
 </head>
 
 <body>
