@@ -1,0 +1,16 @@
+.video-container video {
+  filter: sepia(0.5) hue-rotate(20deg);
+  animation: raspberryBlush 7s infinite;
+}
+
+@keyframes raspberryBlush {
+  0% {
+    filter: sepia(0.5) hue-rotate(20deg);
+  }
+  50% {
+    filter: sepia(0.8) hue-rotate(40deg);
+  }
+  100% {
+    filter: sepia(0.5) hue-rotate(20deg);
+  }
+}
