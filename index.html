@@ -55,6 +55,7 @@
       width: 100vw;
       height: 100vh;
       object-fit: cover;
+      filter: url(#glitch-effect);
     }
 
     .about-button {
@@ -90,27 +91,53 @@
       right: 0px;
       top: 0px;
     }
-  </style>
-</head>
-<body>
-  <div class="video-container">
-    <a class="title-label" href="mailto:lucaludwig@icloud.com">understanding data through context</a>
-    <video autoplay loop muted playsinline>
-      <source src="2023-09-08_14-46-06_UTC.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <div class="about-button about-left">
-    <a href="about.html">ABOUT</a>
-  </div>
-  <div class="about-button about-right">
-    <a href="about.html">ABOUT</a>
-  </div>
-  <div class="about-button about-top-left">
-    <a href="about.html">ABOUT</a>
-  </div>
-  <div class="about-button about-top-right">
-    <a href="about.html">ABOUT</a>
-  </div>
-</body>
-</html>
+
+    .title-label {
+      animation: glitch-effect 4s ease-in-out infinite;
+    }
+
+    @keyframes glitch-effect {
+      0% {
+        transform: translate(-50%, -50%);
+      }
+      50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        filter: url(#glitch-effect);
+      }
+      100% {
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    @keyframes glitch-animation {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 50% 50%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+
+    #glitch-effect {
+      filter: url(#glitch-effect-svg);
+    }
+
+    svg {
+      display: none;
+    }
+
+    @svg {
+      filter: url(#glitch-effect-svg);
+    }
+
+    #glitch-effect-svg {
+      width: 400%;
+      height: 400%;
+      background-color: white;
+      background-image: linear-gradient(to right, #123 20%, #456 40%);
+      animation: glitch-animation 1s ease-in-out infinite;
+    }
+  </style
