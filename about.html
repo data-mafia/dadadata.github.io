@@ -5,86 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Data Consultant</title>
+    <link rel="icon" type="image/png" href="favicon.png"> <!-- Add link to favicon -->
     <!-- Styles -->
     <style>
         body {
             font-family: 'Helvetica', sans-serif;
-            margin: 20px;
+            margin: 0; /* Reset margin to 0 */
             background-color: #f8f8f8; /* Off-white background for the frame */
-            color: #fff;
-            position: relative;
         }
-    
+
         main {
             background-color: #f07178; /* Raspberry blush background */
-            padding: 20px; /* Add padding to create space between text and frame */
+            padding: 20px;
             position: relative;
             z-index: 1; /* Bring the main content above the off-white frame */
         }
-    
+
         h1, h2, h3 {
             color: #fff;
         }
-    
+
         p, a {
             color: #fff;
             text-decoration: none;
             line-height: 1.5;
         }
-    
+
         #contact {
             margin-top: 30px;
         }
-    
+
         section {
             margin-bottom: 30px;
         }
-    
+
         ul {
             list-style-type: disc;
             padding: 0;
             margin-top: 10px;
         }
-    
+
         li {
             margin-bottom: 10px;
             line-height: 1.5;
         }
-    
+
         /* Add the off-white frame */
         body::before {
             content: "";
             display: block;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            right: 10px;
-            bottom: 10px;
+            position: fixed; /* Use fixed positioning */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
             background-color: #f8f8f8;
             z-index: -1;
         }
     </style>
-
 </head>
 
 <body>
-
-    <header>
-        <h1>Navigating the Data Landscape</h1>
-    </header>
 
     <main>
 
         <section>
             <p>Based in Berlin, I bring a wealth of data consulting experience from VMWare, Solarisbank, and the SaaS startup scene.<br>
-              Now, I'm thrilled to extend my expertise to help businesses like yours navigate the data landscape.</p>
+                Now, I'm thrilled to extend my expertise to help businesses like yours navigate the data landscape.</p>
         </section>
 
         <section>
             <h2>Unleash the Potential of Your Data</h2>
             <p>Empowering small to medium-sized businesses (SMBs) by simplifying the complexities of data analytics is my mission.<br>
-              Specializing in providing tailored consultation services, I align with your unique business goals.<br>
-              Let's work together to identify your data pain points and develop strategies for actionable insights.</p>
+                Specializing in providing tailored consultation services, I align with your unique business goals.<br>
+                Let's work together to identify your data pain points and develop strategies for actionable insights.</p>
         </section>
 
         <section>
@@ -102,8 +96,8 @@
         <section>
             <h2>Your Data, Your Way</h2>
             <p>Emphasizing the accessibility of data for everyone, regardless of technical expertise, is central to our approach.<br>
-              Utilizing plain language and easy-to-understand visualizations, findings are communicated with clarity.<br>
-              Ongoing support guarantees optimal utilization of services, reflecting our commitment to your unique journey with data.<br></p>
+                Utilizing plain language and easy-to-understand visualizations, findings are communicated with clarity.<br>
+                Ongoing support guarantees optimal utilization of services, reflecting our commitment to your unique journey with data.<br></p>
         </section>
 
         <section id="contact">
