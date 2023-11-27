@@ -54,6 +54,7 @@
             top: -15px;
         }
 
+        /* Add new styles for contact information */
         .contact-info {
             display: flex;
             justify-content: space-between;
@@ -61,7 +62,12 @@
         }
         
         .contact-info a {
-            margin-right: 5px; /* Adjust the common margin to control the space between all elements */
+            margin-right: 500px; /* Adjust the common margin to control the space between all elements */
+        }
+        
+        .contact-info a:nth-child(1),
+        .contact-info a:nth-child(2) {
+            margin-right: 5px; /* Adjust the margin for the first and second child (name and email) */
         }
 
     </style>
