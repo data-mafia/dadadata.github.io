@@ -10,7 +10,7 @@
         body {
             font-family: 'Helvetica Light', sans-serif;
             margin: 20px;
-            margin-left: 200px; /* Adjust margin to move all text to the right */
+            margin-left: 200px;
             background-color: #f07178;
             color: #f4f6f1;
         }
@@ -22,37 +22,31 @@
         p, a {
             color: #f4f6f1;
             text-decoration: none;
-            /* Remove the underline / line-height: 1.5; / Adjust line height for better readability */
         }
 
         section {
             margin-bottom: 30px;
-            /* Margin between sections */
         }
 
         ul {
             list-style-type: disc;
-            /* Use a disc as a bullet point / padding-left: 20px; / Add padding to the left side of the unordered list /
-            margin-top: 10px; / Add some space above the bullet points */
         }
 
         li {
             margin-bottom: 10px;
-            /* Increase the margin between list items / line-height: 1.5; / Adjust line height for better readability */
         }
 
-        /* Style for the about buttons */
         .about-button {
             position: fixed;
             padding: 15px; 
-            background-color: #f07178; /* Set the background color to #f07178 */
+            background-color: #f07178;
             color: #f4f6f1;
             text-decoration: none;
-            font-size: 1.8em;
+            font-size: 2em;
             font-weight: bold;
             cursor: pointer;
-            border-radius: 0; /* Remove border-radius to match the sharp corners of the about button */
-            z-index: 1000; /* Ensure the button is above other elements */
+            border-radius: 0;
+            z-index: 1000;
         }
 
         .about-top-left {
@@ -60,13 +54,22 @@
             top: -15px;
         }
 
+        /* Add new styles for contact information */
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contact-info a {
+            margin-right: 10px;
+        }
     </style>
 </head>
 
 <body>
 
     <div class="about-button about-top-left">
-        <a href="https://data-mafia.com">BACK</a>
+        <a href="https://github.com/lucaludwig">Luca Ludwig</a>
     </div>
 
     <header>
@@ -109,9 +112,11 @@
 
         <section>
             <h2>Contact</h2>
-            <p>Luca Ludwig<br>
-                <a href="mailto:lucaludwig@icloud.com">lucaludwig@icloud.com</a><br>
-                01573 4640114<br>
+            <!-- Use the new contact-info class for the contact information -->
+            <p class="contact-info">
+                <a href="https://github.com/lucaludwig">Luca Ludwig</a>
+                <a href="mailto:lucaludwig@icloud.com">lucaludwig@icloud.com</a>
+                <a href="tel:015734640114">01573 4640114</a>
             </p>
         </section>
 
