@@ -35,7 +35,7 @@
             height: 100vh;
             overflow: hidden; /* Hide overflow to prevent black bars on some devices */
         }
-
+        
         .title-label {
             position: absolute;
             z-index: 9;
@@ -43,21 +43,22 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 3em;
+            font-size: 3em; /* Original size */
             font-weight: bold;
             text-align: center; /* Center text */
             max-width: 90%;
             white-space: nowrap;
         }
-
+        
         @media only screen and (max-width: 599px) {
             body {
                 font-size: 10px;
             }
-            .title-label {
+            body .title-label {
                 font-size: 1.5em; /* Adjust the font size for smaller screens */
             }
         }
+
 
         video {
             width: 100%;
