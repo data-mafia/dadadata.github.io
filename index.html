@@ -27,7 +27,10 @@
         }
 
         .video-container {
-            position: relative;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 100vw;
             height: 100vh;
             overflow: hidden; /* Hide overflow to prevent black bars on some devices */
@@ -45,7 +48,6 @@
             text-align: center; /* Center text */
             max-width: 90%;
             white-space: nowrap;
-            margin: 0 auto;
         }
 
         @media only screen and (max-width: 599px) {
@@ -129,12 +131,6 @@
 </div>
 <div class="about-button about-top-right">
     <a href="about.html">ABOUT</a>
-</div>
-<div class="contact-info">
-    <a href="https://www.linkedin.com/in/luca-ludwig" target="_blank">Luca Ludwig</a>
-    <a href="mailto:lucaludwig@icloud.com">lucaludwig@icloud.com</a>
-    <a href="tel:015734640114">01573 4640114</a>
-    <a href="CV_Ludwig.pdf" class="cv-button" download>curriculum vitae</a>
 </div>
 </body>
 </html>
