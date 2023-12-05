@@ -10,7 +10,6 @@
         body {
             font-family: 'Helvetica Light', sans-serif;
             margin: 20px;
-            margin-left: 200px;
             background-color: #f07178;
             color: #f4f6f1;
         }
@@ -57,18 +56,21 @@
         /* Add new styles for contact information */
         .contact-info {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
             white-space: nowrap; /* Prevent line breaks within the contact-info */
         }
         
         .contact-info a {
-            margin-right: 378px; /* Adjust the common margin to control the space between all elements */
+            margin-bottom: 10px;
+            flex-basis: 100%; /* Full width on mobile */
         }
-        
-        .contact-info a:nth-child(1),
-        .contact-info a:nth-child(2),
-        .contact-info a:nth-child(3) {
-            margin-right: 0px;
+
+        @media screen and (min-width: 600px) {
+            /* Adjustments for tablets and larger screens */
+            body {
+                margin-left: 200px;
+            }
         }
 
     </style>
