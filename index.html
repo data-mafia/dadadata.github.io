@@ -23,12 +23,14 @@
             font-weight: bold;
             color: #f4f6f1;
             background-color: black;
+            overflow: hidden; /* Disable scrolling */
         }
 
         .video-container {
             position: relative;
-            width: 100%;
+            width: 100vw;
             height: 100vh;
+            overflow: hidden; /* Hide overflow to prevent black bars on some devices */
         }
 
         .title-label {
@@ -40,12 +42,9 @@
             transform: translate(-50%, -50%);
             font-size: 2.25em;
             font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            text-align: center; /* Center text */
             max-width: 90%;
             white-space: nowrap;
-            text-align: center;
             margin: 0 auto;
         }
 
@@ -67,12 +66,13 @@
             font-size: 1.5em;
             font-weight: bold;
             cursor: pointer;
+            text-align: center; /* Center text */
         }
 
         .about-button a {
             text-decoration: none;
             color: #f4f6f1;
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
 
         .about-left {
@@ -86,13 +86,15 @@
         }
 
         .about-top-left {
-            left: 20px;
-            top: 20px;
+            left: 50%; /* Center the button */
+            transform: translateX(-50%);
+            bottom: 20px;
         }
 
         .about-top-right {
-            right: 20px;
-            top: 20px;
+            right: 50%; /* Center the button */
+            transform: translateX(50%);
+            bottom: 20px;
         }
 
         .contact-info {
