@@ -2,118 +2,127 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>d_m_c</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
-
+    <link rel="icon" type="image/png" href="favicon.png">
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            height: 100%;
-        }
-
         body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: Helvetica, sans-serif;
-            font-size: 24px;
-            font-weight: bold;
+            font-family: 'Helvetica Light', sans-serif;
+            margin: 20px;
+            background-color: #f07178;
             color: #f4f6f1;
-            background-color: black;
-            overflow: hidden; /* Disable scrolling */
         }
 
-        .video-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100vw;
-            height: 100vh;
-            overflow: hidden; /* Hide overflow to prevent black bars on some devices */
+        h1, h2, h3 {
+            color: #f4f6f1;
         }
 
-        .title-label {
-            position: absolute;
-            z-index: 9;
-            color: #D25F57;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3em; /* Original size */
-            font-weight: bold;
-            text-align: center; /* Center text */
-            max-width: 90%;
-            white-space: nowrap;
+        p, a {
+            color: #f4f6f1;
+            text-decoration: none;
         }
 
-        @media only screen and (max-width: 599px) {
-            body {
-                font-size: 10px;
-            }
-            .title-label {
-                font-size: 1.5em; /* Adjust the font size for smaller screens */
-            }
+        section {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 10px;
         }
 
         .about-button {
-            position: absolute;
-            z-index: 10;
-            font-size: 1.5em;
+            position: fixed;
+            padding: 15px;
+            background-color: transparent; /* Transparent background */
+            color: #f4f6f1;
+            text-decoration: none;
+            font-size: 1.8em;
             font-weight: bold;
             cursor: pointer;
-            text-align: center;
-        }
-
-        .about-button a {
-            text-decoration: none;
-            color: #f4f6f1;
-            font-size: 1.2em; /* Specify the font size for the "BACK" button */
-        }
-
-        .about-left {
-            left: 20px;
-            bottom: 20px;
-        }
-
-        .about-right {
-            right: 20px;
-            bottom: 20px;
+            border: 1px solid #f4f6f1; /* Thin border in #f4f6f1 color */
+            border-radius: 0;
+            z-index: 1000;
         }
 
         .about-top-left {
-            left: 20px;
-            top: 20px;
+            left: -13.5px;
+            top: -15px;
         }
 
-        .about-top-right {
-            right: 20px;
-            top: 20px;
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .contact-info a {
+            margin-bottom: 10px;
+            flex-basis: 100%;
+        }
+
+        @media screen and (min-width: 600px) {
+            body {
+                margin-left: 200px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="video-container">
-        <a class="title-label" href="mailto:lucaludwig@icloud.com">understanding data through context</a>
-        <video autoplay loop muted playsinline>
-            <source src="2023-09-08_14-46-06_UTC.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>
-    <div class="about-button about-left">
-        <a href="about.html">ABOUT</a>
-    </div>
-    <div class="about-button about-right">
-        <a href="about.html">ABOUT</a>
-    </div>
     <div class="about-button about-top-left">
-        <a href="about.html">ABOUT</a>
+        <a href="index.html">BACK</a>
     </div>
-    <div class="about-button about-top-right">
-        <a href="about.html">ABOUT</a>
-    </div>
+
+    <header>
+        <h1>Navigating the Data Landscape</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <p>Based in Berlin, I bring a wealth of data consulting experience from VMWare, Solarisbank, and the SaaS startup
+                scene.<br> Now, I'm thrilled to extend my expertise to help businesses like yours navigate the data landscape.</p>
+        </section>
+
+        <section>
+            <h2>Unleash the Potential of Your Data</h2>
+            <p>Empowering small to medium-sized businesses (SMBs) by simplifying the complexities of data analytics is my
+                mission.<br> Specializing in providing tailored consultation services, I align with your unique business goals.<br>
+                Let's work together to identify your data pain points and develop strategies for actionable insights.</p>
+        </section>
+
+        <section>
+            <h2>Services Offered:</h2>
+            <ul>
+                <li>Data Preprocessing: Streamlining data for meaningful analyses.</li>
+                <li>Analysis and Insights: Identifying trends, patterns, and anomalies.</li>
+                <li>Automation: Efficiently handling reports, invoices, and processes.</li>
+                <li>Data Visualization: Creating compelling visualizations for easy understanding.</li>
+                <li>Platform Expertise: Shopify, Klaviyo, Google Analytics, Google/Meta Ads, etc.</li>
+                <li>Integration: Seamlessly connecting tools with Zapier, AWS, Google Cloud, etc.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Your Data, Your Way</h2>
+            <p>Emphasizing the accessibility of data for everyone, regardless of technical expertise.<br> Utilizing plain language and easy-to-understand visualizations, findings are communicated with clarity.<br> Ongoing support guarantees optimal utilization of services, reflecting dedication to the unique journey with data.</p>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p class="contact-info">
+                <a href="https://www.linkedin.com/in/luca-ludwig" target="_blank">
+                    <span>Luca Ludwig</span>
+                </a>
+                <a href="mailto:lucaludwig@icloud.com">lucaludwig@icloud.com</a>
+                <a href="tel:015734640114">01573 4640114</a>
+                <a href="CV_Ludwig.pdf" class="cv-button" download>curriculum vitae</a>
+            </p>
+        </section>
+    </main>
 </body>
 </html>
