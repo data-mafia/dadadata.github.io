@@ -7,17 +7,17 @@
     <link rel="shortcut icon" href="favicon.png" type="image/png">
 
     <style>
-        html {
+        html, body {
+            margin: 0;
+            padding: 0;
             overflow: hidden; /* Disable scrolling */
+            height: 100%;
         }
 
         body {
-            margin: 0;
-            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
             font-family: Helvetica, sans-serif;
             font-size: 24px;
             font-weight: bold;
@@ -56,8 +56,8 @@
         }
 
         video {
-            width: 100vw;
-            height: 100vh;
+            width: 100%;
+            height: 100%;
             object-fit: cover;
         }
 
@@ -76,23 +76,23 @@
         }
 
         .about-left {
-            left: 0px;
-            bottom: 0px;
+            left: 0;
+            bottom: 0;
         }
 
         .about-right {
-            right: 0px;
-            bottom: 0px;
+            right: 0;
+            bottom: 0;
         }
 
         .about-top-left {
-            left: 0px;
-            top: 0px;
+            left: 0;
+            top: 0;
         }
 
         .about-top-right {
-            right: 0px;
-            top: 0px;
+            right: 0;
+            top: 0;
         }
     </style>
 </head>
