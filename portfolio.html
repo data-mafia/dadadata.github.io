@@ -45,10 +45,52 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
+
+        /* Back button styles */
+        .about-button {
+            position: fixed;
+            padding: 10px;
+            background-color: transparent;
+            color: #f4f6f1; /* Same blue color as the button */
+            text-decoration: none;
+            font-size: 1.7em;
+            font-weight: bold;
+            cursor: pointer;
+            border: 1px solid  #f4f6f1;
+            border-radius: 0;
+            z-index: 1000;
+        }
+
+        .about-button, .about-button a {
+            color: #f4f6f1;
+        }
         
+        .about-top-left {
+            left: 0px;
+            top: 0px;
+        }
+
+        /* Mobile screen adaptations */
+        @media screen and (max-width: 600px) {
+            .about-button {
+                position: relative;
+                margin-bottom: 20px;
+            }
+            body {
+                margin-left: 20px;
+            }
+        }
+        
+        @media screen and (min-width: 601px) {
+            body {
+                margin-left: 200px;
+            }
+        }
+
     </style>
 </head>
 <body>
+    <!-- Back button -->
     <div class="about-button about-top-left">
         <a href="index.html">BACK</a>
     </div>
@@ -58,6 +100,7 @@
     </header>
 
     <main>
+        <!-- Project sections -->
         <section class="project">
             <h2>Machine Learning Pipeline for Price Prediction</h2>
             <p>reverse.supply · Consumer Goods and Retail</p>
