@@ -47,6 +47,7 @@
             text-align: center;
             max-width: 90%;
             white-space: nowrap;
+            text-decoration: underline;
         }
         
         @media only screen and (max-width: 599px) {
@@ -103,28 +104,40 @@
             right: 20px;
             top: 20px;
         }
+
+        .alternate-colors span:nth-child(odd) {
+            color: #f4f6f1;
+        }
+
+        .alternate-colors span:nth-child(even) {
+            color: #0e00b3;
+        }
+        
+        .white-underline {
+            text-decoration-color: #f4f6f1;
+        }
     </style>
 </head>
 <body>
 <div class="video-container">
-    <a class="title-label" href="about.html">
-        <span style="color: #f4f6f1;">u</span><span style="color: #0e00b3;">n</span>
-        <span style="color: #f4f6f1;">d</span><span style="color: #0e00b3;">e</span>
-        <span style="color: #f4f6f1;">r</span><span style="color: #0e00b3;">s</span>
-        <span style="color: #f4f6f1;">t</span><span style="color: #0e00b3;">a</span>
-        <span style="color: #f4f6f1;">n</span><span style="color: #0e00b3;">d</span>
-        <span style="color: #f4f6f1;">i</span><span style="color: #0e00b3;">n</span>
-        <span style="color: #f4f6f1;">g</span> 
-        <span style="color: #0e00b3;">d</span><span style="color: #f4f6f1;">a</span>
-        <span style="color: #0e00b3;">t</span><span style="color: #f4f6f1;">a</span> 
-        <span style="color: #0e00b3;">t</span><span style="color: #f4f6f1;">h</span>
-        <span style="color: #0e00b3;">r</span><span style="color: #f4f6f1;">o</span>
-        <span style="color: #0e00b3;">u</span><span style="color: #f4f6f1;">g</span>
-        <span style="color: #0e00b3;">h</span> 
-        <span style="color: #f4f6f1;">c</span><span style="color: #0e00b3;">o</span>
-        <span style="color: #f4f6f1;">n</span><span style="color: #0e00b3;">t</span>
-        <span style="color: #f4f6f1;">e</span><span style="color: #0e00b3;">x</span>
-        <span style="color: #f4f6f1;">t</span>
+    <a class="title-label white-underline alternate-colors" href="about.html">
+        <span>u</span><span>n</span>
+        <span>d</span><span>e</span>
+        <span>r</span><span>s</span>
+        <span>t</span><span>a</span>
+        <span>n</span><span>d</span>
+        <span>i</span><span>n</span>
+        <span>g</span> 
+        <span>d</span><span>a</span>
+        <span>t</span><span>a</span> 
+        <span>t</span><span>h</span>
+        <span>r</span><span>o</span>
+        <span>u</span><span>g</span>
+        <span>h</span> 
+        <span>c</span><span>o</span>
+        <span>n</span><span>t</span>
+        <span>e</span><span>x</span>
+        <span>t</span>
     </a>
     <video autoplay loop muted playsinline>
         <source src="2023-09-08_14-46-06_UTC.mp4" type="video/mp4">
@@ -132,35 +145,35 @@
     </video>
 </div>
 <div class="about-button about-left">
-    <a href="contact.html">
-        <span style="color: #f4f6f1;">C</span><span style="color: #0e00b3;">O</span>
-        <span style="color: #f4f6f1;">N</span><span style="color: #0e00b3;">T</span>
-        <span style="color: #f4f6f1;">A</span><span style="color: #0e00b3;">C</span>
-        <span style="color: #f4f6f1;">T</span>
+    <a class="alternate-colors">
+        <span>C</span><span>O</span>
+        <span>N</span><span>T</span>
+        <span>A</span><span>C</span>
+        <span>T</span>
     </a>
 </div>
 <div class="about-button about-right">
-    <a href="imprint.html">
-        <span style="color: #f4f6f1;">I</span><span style="color: #0e00b3;">M</span>
-        <span style="color: #f4f6f1;">P</span><span style="color: #0e00b3;">R</span>
-        <span style="color: #f4f6f1;">I</span><span style="color: #0e00b3;">N</span>
-        <span style="color: #f4f6f1;">T</span>
+    <a class="alternate-colors">
+        <span>I</span><span>M</span>
+        <span>P</span><span>R</span>
+        <span>I</span><span>N</span>
+        <span>T</span>
     </a>
 </div>
 <div class="about-button about-top-left">
-    <a href="about.html">
-        <span style="color: #f4f6f1;">A</span><span style="color: #0e00b3;">B</span>
-        <span style="color: #f4f6f1;">O</span><span style="color: #0e00b3;">U</span>
-        <span style="color: #f4f6f1;">T</span>
+    <a class="alternate-colors">
+        <span>A</span><span>B</span>
+        <span>O</span><span>U</span>
+        <span>T</span>
     </a>
 </div>
 <div class="about-button about-top-right">
-    <a href="portfolio.html">
-        <span style="color: #f4f6f1;">P</span><span style="color: #0e00b3;">O</span>
-        <span style="color: #f4f6f1;">R</span><span style="color: #0e00b3;">T</span>
-        <span style="color: #f4f6f1;">F</span><span style="color: #0e00b3;">O</span>
-        <span style="color: #f4f6f1;">L</span><span style="color: #0e00b3;">I</span>
-        <span style="color: #f4f6f1;">O</span>
+    <a class="alternate-colors">
+        <span>P</span><span>O</span>
+        <span>R</span><span>T</span>
+        <span>F</span><span>O</span>
+        <span>L</span><span>I</span>
+        <span>O</span>
     </a>
 </div>
 </body>
