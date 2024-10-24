@@ -48,6 +48,7 @@
             max-width: 90%;
             white-space: nowrap;
             text-decoration: underline;
+            text-decoration-color: #f4f6f1; /* Keep underline white */
         }
         
         @media only screen and (max-width: 599px) {
@@ -112,15 +113,15 @@
         .alternate-colors span:nth-child(even) {
             color: #0e00b3;
         }
-        
-        .white-underline {
-            text-decoration-color: #f4f6f1;
+
+        .alternate-colors span {
+            display: inline-block;
         }
     </style>
 </head>
 <body>
 <div class="video-container">
-    <a class="title-label white-underline alternate-colors" href="about.html">
+    <a class="title-label alternate-colors" href="about.html">
         <span>u</span><span>n</span>
         <span>d</span><span>e</span>
         <span>r</span><span>s</span>
@@ -145,7 +146,7 @@
     </video>
 </div>
 <div class="about-button about-left">
-    <a class="alternate-colors">
+    <a class="alternate-colors" href="contact.html">
         <span>C</span><span>O</span>
         <span>N</span><span>T</span>
         <span>A</span><span>C</span>
@@ -153,7 +154,7 @@
     </a>
 </div>
 <div class="about-button about-right">
-    <a class="alternate-colors">
+    <a class="alternate-colors" href="imprint.html">
         <span>I</span><span>M</span>
         <span>P</span><span>R</span>
         <span>I</span><span>N</span>
@@ -161,14 +162,14 @@
     </a>
 </div>
 <div class="about-button about-top-left">
-    <a class="alternate-colors">
+    <a class="alternate-colors" href="about.html">
         <span>A</span><span>B</span>
         <span>O</span><span>U</span>
         <span>T</span>
     </a>
 </div>
 <div class="about-button about-top-right">
-    <a class="alternate-colors">
+    <a class="alternate-colors" href="portfolio.html">
         <span>P</span><span>O</span>
         <span>R</span><span>T</span>
         <span>F</span><span>O</span>
